@@ -1,0 +1,20 @@
+[package]
+name = "cargo-env-issue"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+default-run = "first_bin"
+
+[[bin]]
+name = "first_bin"
+path = "src/bin/first_bin.rs"
+
+[[bin]]
+name = "second_bin"
+path = "src/bin/second_bin.rs"
+
+[[bin]]
+name = "third_bin"
+path = "src/bin/third_bin.rs"
+
+[dependencies]

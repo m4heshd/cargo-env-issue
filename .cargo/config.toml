@@ -1,0 +1,4 @@
+[alias]
+build-first = 'build --release --bin first_bin --config env.BIN_NAME="first_bin"'
+build-second = 'build --release --bin second_bin --config env.BIN_NAME="second_bin"'
+build-third = 'build --release --bin third_bin'
