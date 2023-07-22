@@ -17,4 +17,8 @@ path = "src/bin/second_bin.rs"
 name = "third_bin"
 path = "src/bin/third_bin.rs"
 
+[features]
+first_bin = []
+second_bin = []
+
 [dependencies]

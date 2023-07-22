@@ -1,5 +1,7 @@
 fn main() {
-    if let Ok(bin_name) = std::env::var("BIN_NAME") {
-        println!("cargo:warning=BIN_NAME: {:?}", bin_name);
+    if std::env::var("CARGO_FEATURE_FIRST_BIN").is_ok() {
+        println!("cargo:warning=BIN_NAME: first_bin");
+    } else if std::env::var("CARGO_FEATURE_SECOND_BIN").is_ok() {
+        println!("cargo:warning=BIN_NAME: second_bin");
     }
 }
